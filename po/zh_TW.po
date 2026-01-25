@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ibus-array 0.2.3\n"
 "Report-Msgid-Bugs-To: https://github.com/lexical/ibus-array/issues\n"
-"POT-Creation-Date: 2024-04-21 20:50+0800\n"
+"POT-Creation-Date: 2026-01-25 14:37+0800\n"
 "PO-Revision-Date: 2019-12-10 22:12+0800\n"
 "Last-Translator: Anthony Fok <foka@debian.org>\n"
 "Language-Team: Chinese (traditional)\n"
@@ -15,62 +15,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/array.inputMethod.xml.in:5
-msgid "Array 30 Input Method Component"
-msgstr "行列30輸入法元件"
-
-#: src/array.inputMethod.xml.in:24
-msgid "Array"
-msgstr "行列"
-
-#: src/array.inputMethod.xml.in:25
-msgid "Array 30 Input Method 行列30輸入法"
-msgstr "行列30輸入法 Array 30 Input Method"
-
-#: src/engine.c:260 src/engine.c:915
+#: src/engine.c:258 src/engine.c:908
 msgid "English mode"
 msgstr "英文模式"
 
-#: src/engine.c:261 src/engine.c:916
+#: src/engine.c:259 src/engine.c:909
 msgid "Chinese mode"
 msgstr "中文模式"
 
-#: src/engine.c:263 src/engine.c:918
+#: src/engine.c:261 src/engine.c:911
 msgid "Switch to Chinese mode"
 msgstr "切換到中文模式"
 
-#: src/engine.c:264 src/engine.c:919
+#: src/engine.c:262 src/engine.c:912
 msgid "Switch to English mode"
 msgstr "切換到英文模式"
 
-#: src/engine.c:270 src/engine.c:940
+#: src/engine.c:268 src/engine.c:933
 msgid "Full width mode"
 msgstr "全形字元模式"
 
-#: src/engine.c:271 src/engine.c:941
+#: src/engine.c:269 src/engine.c:934
 msgid "Half width mode"
 msgstr "半形字元模式"
 
-#: src/engine.c:273 src/engine.c:943
+#: src/engine.c:271 src/engine.c:936
 msgid "Switch to Half width mode"
 msgstr "切換到半形字元模式"
 
-#: src/engine.c:274 src/engine.c:944
+#: src/engine.c:272 src/engine.c:937
 msgid "Switch to Full width mode"
 msgstr "切換到全形字元模式"
 
-#: src/engine.c:279
+#: src/engine.c:277
 msgid "Setup"
 msgstr "設定"
 
-#: src/engine.c:280
+#: src/engine.c:278
 msgid "Configure Array 30 engine"
 msgstr "設定行列輸入法"
 
-#: src/engine.c:566
+#: src/engine.c:568
 msgid ""
-"1.comma 2.bracket 3.symbol 4.math 5.arrow 6.unit 7.table 8.roman 9.greek 0."
-"bopomo"
+"1.comma 2.bracket 3.symbol 4.math 5.arrow 6.unit 7.table 8.roman 9.greek "
+"0.bopomo"
 msgstr "1.標點 2.括弧 3.符號 4.數學 5.箭頭 6.單位 7.圖表 8.羅馬 9.希臘 0.注音"
 
 #: setup/main.py:46

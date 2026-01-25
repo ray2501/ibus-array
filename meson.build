@@ -2,7 +2,8 @@ project(
     'ibus-array',
     'c',
     license: 'GPL-2.0-or-later',
-    version: '0.2.3'
+    version: '0.2.3',
+    meson_version: '>=1.1'
 )
 
 python = import('python')
@@ -16,7 +17,7 @@ config_data = configuration_data()
 config_data.set('PACKAGE', meson.project_name())
 config_data.set('VERSION', meson.project_version())
 config_data.set('prefix', get_option('prefix'))
-config_data.set('PYTHON', python3.path())
+config_data.set('PYTHON', python3.full_path())
 config_data.set('LOCALEDIR', get_option('prefix') / get_option('localedir'))
 config_data.set('LIBEXECDIR', get_option('prefix') / get_option('libexecdir'))
 config_data.set('PKGDATADIR', get_option('prefix') / get_option('datadir') / meson.project_name())
