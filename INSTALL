@@ -4,7 +4,7 @@ The RPM package of ibus-array can be found on https://rpmsphere.github.io/
 
 # Basic Installation
 
-This project use the Meason build system. 
+This project use the Meson build system.
 
 For more advanced configuration please refer to the command line help meson
 --help or the Meson documentation located at the
@@ -13,3 +13,4 @@ For more advanced configuration please refer to the command line help meson
     $ meson setup build && cd build
     $ meson compile
     $ meson install
+
