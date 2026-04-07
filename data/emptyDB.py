@@ -19,7 +19,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-from pysqlite2 import dbapi2 as sqlite
+import sqlite3 as sqlite
 from sys import argv
 
 # empty tables
