@@ -720,6 +720,13 @@ static gboolean  ibus_array_engine_process_key_event (IBusEngine *engine, guint 
             arrayeng->cursor_pos ++;
             ibus_array_engine_update_symbol_lookup_table (arrayeng);
             return TRUE;
+        } else if (g_strcmp0(arrayeng->preedit->str, "hg") == 0) {
+            g_string_insert_c (arrayeng->preedit,
+                               arrayeng->cursor_pos,
+                               keyval);
+            arrayeng->cursor_pos ++;
+            ibus_array_engine_update_symbol_lookup_table (arrayeng);
+            return TRUE;
         }
         return ibus_array_engine_process_candidate_key_event(arrayeng, keyval, modifiers);
     }
