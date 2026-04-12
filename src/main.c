@@ -59,7 +59,7 @@ init (void)
 
     component = ibus_component_new ("org.freedesktop.IBus.Array",
                                     "Array 30 Input Method",
-                                    "0.2.3",
+                                    "0.3.0",
                                     "GPL",
                                     "Keng-Yu Lin <kengyu@debian.org>",
                                     "https://github.com/lexical/ibus-array",

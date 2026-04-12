@@ -4,9 +4,9 @@
 # This file is distributed under the same license as the ibus-package package.
 msgid ""
 msgstr ""
-"Project-Id-Version: ibus-array 0.2.3\n"
+"Project-Id-Version: ibus-array 0.3.0\n"
 "Report-Msgid-Bugs-To: https://github.com/lexical/ibus-array/issues\n"
-"POT-Creation-Date: 2026-01-25 14:37+0800\n"
+"POT-Creation-Date: 2026-04-07 20:45+0800\n"
 "PO-Revision-Date: 2019-12-10 22:12+0800\n"
 "Last-Translator: Anthony Fok <foka@debian.org>\n"
 "Language-Team: Chinese (traditional)\n"
@@ -15,35 +15,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/engine.c:258 src/engine.c:908
+#: src/engine.c:258 src/engine.c:915
 msgid "English mode"
 msgstr "英文模式"
 
-#: src/engine.c:259 src/engine.c:909
+#: src/engine.c:259 src/engine.c:916
 msgid "Chinese mode"
 msgstr "中文模式"
 
-#: src/engine.c:261 src/engine.c:911
+#: src/engine.c:261 src/engine.c:918
 msgid "Switch to Chinese mode"
 msgstr "切換到中文模式"
 
-#: src/engine.c:262 src/engine.c:912
+#: src/engine.c:262 src/engine.c:919
 msgid "Switch to English mode"
 msgstr "切換到英文模式"
 
-#: src/engine.c:268 src/engine.c:933
+#: src/engine.c:268 src/engine.c:940
 msgid "Full width mode"
 msgstr "全形字元模式"
 
-#: src/engine.c:269 src/engine.c:934
+#: src/engine.c:269 src/engine.c:941
 msgid "Half width mode"
 msgstr "半形字元模式"
 
-#: src/engine.c:271 src/engine.c:936
+#: src/engine.c:271 src/engine.c:943
 msgid "Switch to Half width mode"
 msgstr "切換到半形字元模式"
 
-#: src/engine.c:272 src/engine.c:937
+#: src/engine.c:272 src/engine.c:944
 msgid "Switch to Full width mode"
 msgstr "切換到全形字元模式"
 
