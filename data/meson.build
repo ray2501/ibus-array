@@ -1,4 +1,14 @@
-install_data(
-    'array.db',
+array_db = custom_target('array.db',
+    input: [
+        'array30-OpenVanilla-big-v2026-1.02-20260407.cin',
+        'array30-phrase-20210725.txt',
+        'array-shortcode-20210725.cin',
+    ],
+    output: 'array.db',
+    command: [
+        python3, files('gen_array_db.py'),
+        '@INPUT0@', '@INPUT1@', '@INPUT2@', '@OUTPUT@',
+    ],
+    install: true,
     install_dir: get_option('datadir') / meson.project_name() / 'tables'
 )

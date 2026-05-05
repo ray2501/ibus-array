@@ -4,8 +4,8 @@
 import sqlite3 as sqlite
 from sys import argv
 
-def array_updatedb(table_file, table):
-	con = sqlite.connect("array.db")
+def array_updatedb(table_file, table, db_file="array.db"):
+	con = sqlite.connect(db_file)
 	cur = con.cursor()
 	cur.execute('select * from ' + table)
 	tbl = cur.fetchall()
@@ -24,10 +24,11 @@ def array_updatedb(table_file, table):
 	con.close()
 
 # empty tables
-con = sqlite.connect("array.db")
+db_file = argv[2] if len(argv) > 2 else "array.db"
+con = sqlite.connect(db_file)
 cur = con.cursor()
 cur.execute('DELETE FROM phrase;')
 con.commit()
 con.close()
 
-array_updatedb(argv[1], 'phrase')
+array_updatedb(argv[1], 'phrase', db_file)

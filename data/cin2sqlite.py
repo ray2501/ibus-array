@@ -55,8 +55,8 @@ STR_ARRAY_SYMBOL  = "CJK Symbols & Punctuation"
 REG_STACK = []
 
 
-def array_updatedb(table_file):
-        con = sqlite.connect("array.db")
+def array_updatedb(table_file, db_file="array.db"):
+        con = sqlite.connect(db_file)
         cur = con.cursor()
 
         # read from the text table
@@ -202,10 +202,11 @@ def array_updatedb(table_file):
         con.close()
 
 # empty tables
-con = sqlite.connect("array.db")
+db_file = argv[2] if len(argv) > 2 else "array.db"
+con = sqlite.connect(db_file)
 cur = con.cursor()
 cur.execute('DELETE FROM main;')
 con.commit()
 con.close()
 
-array_updatedb(argv[1])
+array_updatedb(argv[1], db_file)
