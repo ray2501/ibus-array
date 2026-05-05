@@ -958,14 +958,14 @@ static void ibus_array_engine_property_activate (IBusEngine *engine, const gchar
 }
 
 static void ibus_config_value_changed_cb (IBusConfig *config, const gchar *section,  const gchar *name, GVariant *value, gpointer unused) {
-    if (g_strcmp0(section, "engine/array") == 0) {
-        if (g_strcmp0(name, "specialnotify") == 0)
+    if (g_strcmp0(section, "engine/Array") == 0) {
+        if (g_strcmp0(name, "SpecialNotify") == 0)
             is_special_notify = g_variant_get_boolean (value);
-        else if (g_strcmp0(name, "specialonly") == 0)
+        else if (g_strcmp0(name, "SpecialOnly") == 0)
             is_special_only = g_variant_get_boolean (value);
-        else if (g_strcmp0(name, "outputsimplified") == 0)
+        else if (g_strcmp0(name, "OutputSimplified") == 0)
             is_output_simplified = g_variant_get_boolean (value);
-        else if (g_strcmp0(name, "useshift") == 0)
+        else if (g_strcmp0(name, "UseShift") == 0)
             is_use_shift = g_variant_get_boolean (value);
     }
 }
